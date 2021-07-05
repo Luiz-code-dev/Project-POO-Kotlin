@@ -1,21 +1,8 @@
 package digitalBank
 
-class People {
+abstract class People(
 
-    var nome: String = "Luiz"
+       val nome: String,
+       val cpf: String
 
-    var cpf: String = "123.456.789-10"
-    private set
-
-    constructor()
-
-    fun pessoaInf() = "$nome e $cpf"
-
-
-}
-
-fun main() {
-
-    val Luiz = People()
-    println(Luiz.pessoaInf())
-}
+)
